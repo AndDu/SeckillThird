@@ -1,5 +1,6 @@
 package org.seckill.dao;
 
+import java.util.Date;
 import java.util.List;
 import org.seckill.entity.Seckill;
 
@@ -9,9 +10,10 @@ public interface SeckillDao {
   /**
    * 秒杀商品，减库存
    * @param seckillId
-   * @param number
+   * @param killTIme
+   * @return  影响行数，大于1表示更新成功
    */
-  void reduceNumber(int seckillId,int number);
+  int reduceNumber(int seckillId, Date killTIme);
 
 
   /**
@@ -24,10 +26,10 @@ public interface SeckillDao {
 
   /**
    * 秒杀商品列表
-   * @param page
    * @param offset
+   * @param limit
    * @return
    */
-  List<Seckill> querySeckillList(int page,int offset);
+  List<Seckill> querySeckillList(int offset,int limit);
 
 }

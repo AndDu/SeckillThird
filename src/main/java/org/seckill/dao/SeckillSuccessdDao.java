@@ -8,11 +8,14 @@ import org.seckill.entity.Successd;
 public interface SeckillSuccessdDao {
 
 
+  int insertSuccessKilled(int seckillId,String phone);
 
-  Successd excuteSeckill(int seckillId,int number,String phone);
+  SeckillSuccessd queryByIdwithSeckill(long seckillId);
 
-  SeckillSuccessd querySeckillSuceessByPhone(String phone);
+//  Successd excuteSeckill(int seckillId,int number,String phone);
 
-  List<SeckillSuccessd> queryAllSeckillSuceessByPhone(String phone);
+//  SeckillSuccessd querySeckillSuceessByPhone(String phone);
+//
+//  List<SeckillSuccessd> queryAllSeckillSuceessByPhone(String phone);
 
 }
