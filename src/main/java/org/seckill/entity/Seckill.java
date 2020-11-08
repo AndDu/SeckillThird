@@ -2,6 +2,7 @@ package org.seckill.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @Description  
@@ -10,9 +11,23 @@ import java.util.Date;
  */
 
 
+
 public class Seckill  implements Serializable {
 
 	private static final long serialVersionUID =  817040863508521897L;
+
+
+	@Override
+	public String toString() {
+		return "Seckill{" +
+				"seckillId=" + seckillId +
+				", name='" + name + '\'' +
+				", number=" + number +
+				", startTime=" + startTime +
+				", endTime=" + endTime +
+				", createTime=" + createTime +
+				'}';
+	}
 
 	/**
 	 * 商品ID

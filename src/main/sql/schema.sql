@@ -42,4 +42,15 @@ CREATE TABLE seckill_successd
   DEFAULT CHARSET = utf8 COMMENT '秒杀成功记录表';
 
 
+select
+    sk.seckill_id,
+    sk.user_phone,
+    sk.create_time,
+    sk.state
+
+from seckill_successd as sk
+
+where sk.seckill_id=1000
+  and sk.user_phone=1811111111;
+
 # root and  password root 123456

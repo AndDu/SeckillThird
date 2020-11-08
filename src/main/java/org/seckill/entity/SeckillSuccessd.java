@@ -12,6 +12,18 @@ import java.util.Date;
 
 public class SeckillSuccessd  implements Serializable {
 
+
+	@Override
+	public String toString() {
+		return "SeckillSuccessd{" +
+				"seckill=" + seckill +
+				", seckillId=" + seckillId +
+				", userPhone='" + userPhone + '\'' +
+				", createTime=" + createTime +
+				", state=" + state +
+				'}';
+	}
+
 	private static final long serialVersionUID =  4470355504677089577L;
 
 	private Seckill seckill;
