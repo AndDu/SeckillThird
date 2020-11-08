@@ -22,7 +22,7 @@ public interface SeckillDao {
    * @param seckillId
    * @return
    */
-  Seckill queryById(int seckillId);
+  Seckill queryById(long seckillId);
 
 
   /**
