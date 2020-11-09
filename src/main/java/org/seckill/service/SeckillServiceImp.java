@@ -8,6 +8,7 @@ import org.seckill.dao.SeckillSuccessdDao;
 import org.seckill.dto.ExcuteResult;
 import org.seckill.dto.SeckillState;
 import org.seckill.entity.Seckill;
+import org.springframework.util.DigestUtils;
 
 public class SeckillServiceImp implements ISeckillService {
 
@@ -50,7 +51,8 @@ public class SeckillServiceImp implements ISeckillService {
   private String getMd5(long seckillId) {
 
     String s = seckillId + '/' + KEY;
-    return s;
+    String md5 = new String(DigestUtils.md5Digest(s.getBytes()));
+    return md5;
 
   }
 
