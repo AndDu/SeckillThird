@@ -9,7 +9,7 @@ import org.seckill.entity.Successd;
 public interface SeckillSuccessdDao {
 
 
-  int insertSuccessKilled(@Param("seckillId") int seckillId,@Param("phone")String phone);
+  int insertSuccessKilled(@Param("seckillId") long seckillId,@Param("phone")String phone);
 
   SeckillSuccessd queryByIdwithSeckill(@Param("seckillId")long seckillId,@Param("phone")String phone);
 

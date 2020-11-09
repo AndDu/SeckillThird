@@ -9,6 +9,13 @@ public class ExcuteResult {
   private int state;
   private Seckill seckill;
 
+
+  public ExcuteResult(long seckillId, int state, Seckill seckill) {
+    this.seckillId = seckillId;
+    this.state = state;
+    this.seckill = seckill;
+  }
+
   public long getSeckillId() {
     return seckillId;
   }
