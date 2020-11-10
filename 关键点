@@ -12,4 +12,15 @@ Service 层开发 点
   --秒杀其他相关异常
   
  -- 实现service
-    
+ -- 返回对应的结果
+ 
+ --springIOC 托管Service依赖
+  ----xml 配置
+  ----package-scan
+  ----annotation注解
+  --spring文件下创建spring-service.xml 
+  --autowire
+
+--spring 声明式事务  --解脱事务代码
+  --配置事务管理器，在spring-service.xml中
+  --Transactional
